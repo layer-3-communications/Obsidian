@@ -1,0 +1,14 @@
+#---------------------------------------------------------------------------------------------
+#		$monName: $hostName
+#---------------------------------------------------------------------------------------------
+define host{
+	use			generic-host			; Name of host template to use
+	host_name		$hostGroup-$monName
+	alias			$hostGroup-$hostName
+	display_name		$hostGroup-$hostName
+	address			$monIP
+	contact_groups		Oncall, $hostGroup-contacts
+	host_groups		$hostGroup
+	parents			$parents
+	notes			$notes
+}

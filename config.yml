@@ -1,0 +1,66 @@
+# configuration for script
+config:
+        dbPath: '/home/mcabe/Obsidian/Database/MonDB.db'
+        hostGrp: 
+                - 'DCG'
+                - 'FCBoE'
+#                - 'FCS'
+#                - 'RCSS'
+#                - 'SSCC'
+# OID information specific vendor devices
+# Junpier EX/QFX(J-EX)
+J-EX:
+        model: '1.3.6.1.4.1.2636.3.40.1.4.1.1.1.8.0'
+        version: '1.3.6.1.4.1.2636.3.40.1.4.1.1.1.5.0'
+        serials: '1.3.6.1.4.1.2636.3.40.1.4.1.1.1.2'
+# Juniper SRX
+J-SRX:
+        model: '1.3.6.1.4.1.2636.3.1.2.0'
+        version: '1.3.6.1.2.1.25.6.3.1.2.2'
+        serials: '1.3.6.1.4.1.2636.3.1.3.0'
+# Palo Alto(PA)
+PA:
+        model: '1.3.6.1.4.1.25461.2.1.2.2.1.0'
+        version: '1.3.6.1.4.1.25461.2.1.2.1.1.0'
+        serials: '1.3.6.1.4.1.25461.2.1.2.1.3.0'
+# Aruba Mobility Controller and Mobility Master(A-MC)
+A-MC:
+        model: '1.3.6.1.4.1.14823.2.2.1.2.1.3.0'
+        version: '1.3.6.1.4.1.14823.2.2.1.2.1.28.0'
+        serials: '1.3.6.1.4.1.14823.2.2.1.2.1.11.0'
+# F5 Big IP(F5-BI)
+F5-BI:
+        model: '1.3.6.1.4.1.3375.2.1.3.5.2.0'
+        version: '1.3.6.1.4.1.3375.2.1.4.2.0'
+        serials: '1.3.6.1.4.1.3375.2.1.3.3.3.0'
+# Aruba ClearPass(A-CP)
+A-CP:
+        model: '1.3.6.1.4.1.14823.1.6.1.1.1.1.1.1.0' 
+        version: '1.3.6.1.4.1.14823.1.6.1.1.1.1.1.3.0'
+        serials: '1.3.6.1.4.1.14823.1.6.1.1.1.1.1.2.0'
+# Ruckus ICX(R-ICX)
+R-ICX:
+        model: '1.3.6.1.4.1.1991.1.1.2.2.1.1.2.1'
+        version: '1.3.6.1.4.1.1991.1.1.2.1.49.0'
+        serials: '1.3.6.1.4.1.1991.1.1.1.4.1.1.2'
+# Ruckus ICX Singel(R-ICX-S)
+R-ICX-S:
+        model: '1.3.6.1.4.1.1991.1.1.2.2.1.1.2.1'
+        version: '1.3.6.1.4.1.1991.1.1.2.1.49.0'
+        serials: '1.3.6.1.4.1.1991.1.1.1.1.2.0'
+# Brocade ICX(B-MLX)
+B-MLX:
+        model: '1.3.6.1.4.1.1991.1.1.1.1.17.0'
+        version: '1.3.6.1.4.1.1991.1.1.2.1.11.0'
+        serials: '1.3.6.1.4.1.1991.1.1.1.1.2'
+#       *modules-serials: 1.3.6.1.4.1.1991.1.1.2.8.1.1.6
+# Brocade VDX(B-VDX)
+B-VDX:
+        model: '1.3.6.1.2.1.47.1.1.1.1.2.1'
+        version: '1.3.6.1.4.1.1588.2.1.1.1.1.6.0'
+        serials: '1.3.6.1.2.1.47.1.1.1.1.11.1'
+# Brocade CER(B-CER)
+B-CER:
+        model: '1.3.6.1.2.1.47.1.1.1.1.2.1'
+        version: '1.3.6.1.2.1.47.1.1.1.1.10.150'
+        serials: '1.3.6.1.2.1.47.1.1.1.1.11.1'
