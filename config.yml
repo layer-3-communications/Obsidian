@@ -4,6 +4,7 @@ config:
         hostGrp: 
                 - 'DCG'
                 - 'FCBoE'
+                - 'RPC'
 #                - 'FCS'
 #                - 'RCSS'
 #                - 'SSCC'
