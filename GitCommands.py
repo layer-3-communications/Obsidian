@@ -1,21 +1,20 @@
-# This module takes all pass in variables and creates a SNMP pull and returns the output. 
-# If unable to connect, the FAIL TO CONNECT will be return instead
+# This module runs git commands to updated generated folder after pull
 
 import subprocess
-import re
 
-def run(string, ipAddr, oid):
-   
-    data = ""
-
+def run():
     #run ssh comamand
-    p = subprocess.Popen(['snmpwalk', '-v', '2c', '-c', string,  ipAddr, oid], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    p = subprocess.Popen(['git', 'add', '*'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = p.communicate()
-
     data = str(out)
+    print (out)
+    p = subprocess.Popen(['git', 'commit', '-m', '/"updated generated/"'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = p.communicate()
+    data = str(out)
+    print (out)
+    p = subprocess.Popen(['git', 'push'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = p.communicate()
+    data = str(out)
+    print (out)
 
-    data = data.replace('b\'', '')
-    data = re.sub(r'iso', '\n', data)
-
-    return data
-
+run()
