@@ -7,7 +7,7 @@ def run():
 
     timestamp = datetime.datetime.now()
    
-    timestamp = str(timestamp)
+    timestamp = str(timestamp.strftime('%Y-%m-%d') )
 
     print (timestamp)
 
