@@ -5,12 +5,11 @@ import datetime
 
 def run():
 
+    # Get current date
     timestamp = datetime.datetime.now()
-   
     timestamp = str(timestamp.strftime('%Y-%m-%d') )
-
-    print (timestamp)
-
+    
+    # Run Git commands to upload previous run probe with time stamp
     p = subprocess.Popen(['git', 'add', '*'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = p.communicate()
     data = str(out)
@@ -21,4 +20,3 @@ def run():
     out, err = p.communicate()
     data = str(out)
 
-run()

@@ -19,5 +19,6 @@ def run():
         # generate configuration with updated database
         GenerateConfig.run(dbPath, hostGrp)
 
+        # Run Git commands to upload files to Github
         GitCommands.run()
 run()
