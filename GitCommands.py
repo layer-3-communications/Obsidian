@@ -19,5 +19,3 @@ def run():
     p = subprocess.Popen(['git', 'push'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = p.communicate()
     data = str(out)
-
-run()
