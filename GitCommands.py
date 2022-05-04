@@ -20,3 +20,4 @@ def run():
     out, err = p.communicate()
     data = str(out)
 
+run()
