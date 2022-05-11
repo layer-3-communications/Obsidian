@@ -9,13 +9,13 @@ def run():
     timestamp = datetime.datetime.now()
     timestamp = str(timestamp.strftime('%Y-%m-%d') )
     
-    # Run Git commands to upload previous run probe with time stamp
-    p = subprocess.Popen(['git', 'add', '*'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    # Run Git commands to upload previous
+    p = subprocess.Popen(['git', 'add', '*'], cwd = "/home/mcabe/Obsidian", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = p.communicate()
     data = str(out)
-    p = subprocess.Popen(['git', 'commit', '-m', timestamp], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    p = subprocess.Popen(['git', 'commit', '-m', timestamp], cwd = "/home/mcabe/Obsidian", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = p.communicate()
     data = str(out)
-    p = subprocess.Popen(['git', 'push'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    p = subprocess.Popen(['git', 'push'], cwd = "/home/mcabe/Obsidian", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = p.communicate()
     data = str(out)
