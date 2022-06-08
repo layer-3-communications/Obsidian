@@ -1,0 +1,925 @@
+set security address-book global address BES-IDF-A 172.16.22.4/32
+set security address-book global address-set MONITORED-ELEMENTS address BES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BES-IDF-A match destination-address 10.100.101.54/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BES-IDF-A then static-nat prefix-name BES-IDF-A
+
+set security address-book global address BES-IDF-B 172.16.22.5/32
+set security address-book global address-set MONITORED-ELEMENTS address BES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BES-IDF-B match destination-address 10.100.101.55/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BES-IDF-B then static-nat prefix-name BES-IDF-B
+
+set security address-book global address BES-MDF 172.16.22.3/32
+set security address-book global address-set MONITORED-ELEMENTS address BES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BES-MDF match destination-address 10.100.101.53/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BES-MDF then static-nat prefix-name BES-MDF
+
+set security address-book global address BMMS-IDF-A 172.17.224.4/32
+set security address-book global address-set MONITORED-ELEMENTS address BMMS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-A match destination-address 10.100.101.137/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-A then static-nat prefix-name BMMS-IDF-A
+
+set security address-book global address BMMS-IDF-B 172.17.224.5/32
+set security address-book global address-set MONITORED-ELEMENTS address BMMS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-B match destination-address 10.100.101.138/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-B then static-nat prefix-name BMMS-IDF-B
+
+set security address-book global address BMMS-IDF-C 172.17.224.6/32
+set security address-book global address-set MONITORED-ELEMENTS address BMMS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-C match destination-address 10.100.101.139/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-C then static-nat prefix-name BMMS-IDF-C
+
+set security address-book global address BMMS-IDF-D 172.17.224.7/32
+set security address-book global address-set MONITORED-ELEMENTS address BMMS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-D match destination-address 10.100.101.140/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-D then static-nat prefix-name BMMS-IDF-D
+
+set security address-book global address BMMS-IDF-E 172.17.224.8/32
+set security address-book global address-set MONITORED-ELEMENTS address BMMS-IDF-E
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-E match destination-address 10.100.101.141/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-IDF-E then static-nat prefix-name BMMS-IDF-E
+
+set security address-book global address BMMS-MDF 172.17.224.3/32
+set security address-book global address-set MONITORED-ELEMENTS address BMMS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-MDF match destination-address 10.100.101.136/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BMMS-MDF then static-nat prefix-name BMMS-MDF
+
+set security address-book global address BURCH-IDF-A 172.16.8.4/32
+set security address-book global address-set MONITORED-ELEMENTS address BURCH-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BURCH-IDF-A match destination-address 10.100.101.38/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BURCH-IDF-A then static-nat prefix-name BURCH-IDF-A
+
+set security address-book global address BURCH-IDF-B 172.16.8.5/32
+set security address-book global address-set MONITORED-ELEMENTS address BURCH-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BURCH-IDF-B match destination-address 10.100.101.39/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BURCH-IDF-B then static-nat prefix-name BURCH-IDF-B
+
+set security address-book global address BURCH-MDF 172.16.8.3/32
+set security address-book global address-set MONITORED-ELEMENTS address BURCH-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BURCH-MDF match destination-address 10.100.101.37/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule BURCH-MDF then static-nat prefix-name BURCH-MDF
+
+set security address-book global address CES-IDF-A 172.17.0.4/32
+set security address-book global address-set MONITORED-ELEMENTS address CES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-IDF-A match destination-address 10.100.101.84/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-IDF-A then static-nat prefix-name CES-IDF-A
+
+set security address-book global address CES-IDF-B 172.17.0.5/32
+set security address-book global address-set MONITORED-ELEMENTS address CES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-IDF-B match destination-address 10.100.101.85/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-IDF-B then static-nat prefix-name CES-IDF-B
+
+set security address-book global address CES-IDF-C 172.17.0.6/32
+set security address-book global address-set MONITORED-ELEMENTS address CES-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-IDF-C match destination-address 10.100.101.86/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-IDF-C then static-nat prefix-name CES-IDF-C
+
+set security address-book global address CES-IDF-D 172.17.0.7/32
+set security address-book global address-set MONITORED-ELEMENTS address CES-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-IDF-D match destination-address 10.100.101.87/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-IDF-D then static-nat prefix-name CES-IDF-D
+
+set security address-book global address CES-MDF 172.17.0.3/32
+set security address-book global address-set MONITORED-ELEMENTS address CES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-MDF match destination-address 10.100.101.83/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CES-MDF then static-nat prefix-name CES-MDF
+
+set security address-book global address CLES-IDF-A 172.17.48.4/32
+set security address-book global address-set MONITORED-ELEMENTS address CLES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CLES-IDF-A match destination-address 10.100.101.98/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CLES-IDF-A then static-nat prefix-name CLES-IDF-A
+
+set security address-book global address CLES-IDF-B 172.17.48.5/32
+set security address-book global address-set MONITORED-ELEMENTS address CLES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CLES-IDF-B match destination-address 10.100.101.99/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CLES-IDF-B then static-nat prefix-name CLES-IDF-B
+
+set security address-book global address CLES-MDF 172.17.48.3/32
+set security address-book global address-set MONITORED-ELEMENTS address CLES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CLES-MDF match destination-address 10.100.101.97/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule CLES-MDF then static-nat prefix-name CLES-MDF
+
+set security address-book global address ENA-WAN-Router 172.17.255.20/32
+set security address-book global address-set MONITORED-ELEMENTS address ENA-WAN-Router
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule ENA-WAN-Router match destination-address 10.100.101.145/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule ENA-WAN-Router then static-nat prefix-name ENA-WAN-Router
+
+set security address-book global address FCHS-IDF-A 172.17.80.4/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-A match destination-address 10.100.101.109/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-A then static-nat prefix-name FCHS-IDF-A
+
+set security address-book global address FCHS-IDF-B 172.17.80.5/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-B match destination-address 10.100.101.110/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-B then static-nat prefix-name FCHS-IDF-B
+
+set security address-book global address FCHS-IDF-C 172.17.80.6/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-C match destination-address 10.100.101.111/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-C then static-nat prefix-name FCHS-IDF-C
+
+set security address-book global address FCHS-IDF-D 172.17.80.7/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-D match destination-address 10.100.101.112/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-D then static-nat prefix-name FCHS-IDF-D
+
+set security address-book global address FCHS-IDF-F 172.17.80.20/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-IDF-F
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-F match destination-address 10.100.101.156/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-F then static-nat prefix-name FCHS-IDF-F
+
+set security address-book global address FCHS-IDF-Field 172.17.80.22/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-IDF-Field
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-Field match destination-address 10.100.101.158/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-Field then static-nat prefix-name FCHS-IDF-Field
+
+set security address-book global address FCHS-IDF-Press 172.17.80.21/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-IDF-Press
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-Press match destination-address 10.100.101.157/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-IDF-Press then static-nat prefix-name FCHS-IDF-Press
+
+set security address-book global address FCHS-Intercom 172.17.80.8/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-Intercom match destination-address 10.100.101.151/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-Intercom then static-nat prefix-name FCHS-Intercom
+
+set security address-book global address FCHS-MDF 172.17.80.3/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-MDF match destination-address 10.100.101.7/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-MDF then static-nat prefix-name FCHS-MDF
+
+set security address-book global address FCHS-MDF-Intercom 172.17.80.19/32
+set security address-book global address-set MONITORED-ELEMENTS address FCHS-MDF-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-MDF-Intercom match destination-address 10.100.101.171/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCHS-MDF-Intercom then static-nat prefix-name FCHS-MDF-Intercom
+
+set security address-book global address FCLTS-MDF 172.16.42.3/32
+set security address-book global address-set MONITORED-ELEMENTS address FCLTS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCLTS-MDF match destination-address 10.100.101.160/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FCLTS-MDF then static-nat prefix-name FCLTS-MDF
+
+set security address-book global address FES-IDF-A 172.16.50.4/32
+set security address-book global address-set MONITORED-ELEMENTS address FES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FES-IDF-A match destination-address 10.100.101.81/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FES-IDF-A then static-nat prefix-name FES-IDF-A
+
+set security address-book global address FES-IDF-B 172.16.50.5/32
+set security address-book global address-set MONITORED-ELEMENTS address FES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FES-IDF-B match destination-address 10.100.101.82/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FES-IDF-B then static-nat prefix-name FES-IDF-B
+
+set security address-book global address FES-MDF 172.16.50.3/32
+set security address-book global address-set MONITORED-ELEMENTS address FES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FES-MDF match destination-address 10.100.101.80/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FES-MDF then static-nat prefix-name FES-MDF
+
+set security address-book global address FIS-IDF-A 172.17.144.4/32
+set security address-book global address-set MONITORED-ELEMENTS address FIS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FIS-IDF-A match destination-address 10.100.101.162/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FIS-IDF-A then static-nat prefix-name FIS-IDF-A
+
+set security address-book global address FIS-MDF 172.17.144.3/32
+set security address-book global address-set MONITORED-ELEMENTS address FIS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FIS-MDF match destination-address 10.100.101.161/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FIS-MDF then static-nat prefix-name FIS-MDF
+
+set security address-book global address FMS-IDF-A 172.18.32.4/32
+set security address-book global address-set MONITORED-ELEMENTS address FMS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FMS-IDF-A match destination-address 10.100.101.65/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FMS-IDF-A then static-nat prefix-name FMS-IDF-A
+
+set security address-book global address FMS-IDF-B 172.18.32.5/32
+set security address-book global address-set MONITORED-ELEMENTS address FMS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FMS-IDF-B match destination-address 10.100.101.66/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FMS-IDF-B then static-nat prefix-name FMS-IDF-B
+
+set security address-book global address FMS-IDF-C 172.18.32.6/32
+set security address-book global address-set MONITORED-ELEMENTS address FMS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FMS-IDF-C match destination-address 10.100.101.67/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FMS-IDF-C then static-nat prefix-name FMS-IDF-C
+
+set security address-book global address FMS-MDF 172.18.32.3/32
+set security address-book global address-set MONITORED-ELEMENTS address FMS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FMS-MDF match destination-address 10.100.101.64/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FMS-MDF then static-nat prefix-name FMS-MDF
+
+set security address-book global address FRMS-IDF-A 172.17.192.4/32
+set security address-book global address-set MONITORED-ELEMENTS address FRMS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-IDF-A match destination-address 10.100.101.33/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-IDF-A then static-nat prefix-name FRMS-IDF-A
+
+set security address-book global address FRMS-IDF-B 172.17.192.5/32
+set security address-book global address-set MONITORED-ELEMENTS address FRMS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-IDF-B match destination-address 10.100.101.34/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-IDF-B then static-nat prefix-name FRMS-IDF-B
+
+set security address-book global address FRMS-IDF-C 172.17.192.6/32
+set security address-book global address-set MONITORED-ELEMENTS address FRMS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-IDF-C match destination-address 10.100.101.35/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-IDF-C then static-nat prefix-name FRMS-IDF-C
+
+set security address-book global address FRMS-IDF-D 172.17.192.7/32
+set security address-book global address-set MONITORED-ELEMENTS address FRMS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-IDF-D match destination-address 10.100.101.36/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-IDF-D then static-nat prefix-name FRMS-IDF-D
+
+set security address-book global address FRMS-MDF 172.17.192.3/32
+set security address-book global address-set MONITORED-ELEMENTS address FRMS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-MDF match destination-address 10.100.101.32/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule FRMS-MDF then static-nat prefix-name FRMS-MDF
+
+set security address-book global address HES-IDF-A 172.16.20.4/32
+set security address-book global address-set MONITORED-ELEMENTS address HES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule HES-IDF-A match destination-address 10.100.101.51/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule HES-IDF-A then static-nat prefix-name HES-IDF-A
+
+set security address-book global address HES-IDF-B 172.16.20.5/32
+set security address-book global address-set MONITORED-ELEMENTS address HES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule HES-IDF-B match destination-address 10.100.101.52/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule HES-IDF-B then static-nat prefix-name HES-IDF-B
+
+set security address-book global address HES-MDF 172.16.20.3/32
+set security address-book global address-set MONITORED-ELEMENTS address HES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule HES-MDF match destination-address 10.100.101.50/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule HES-MDF then static-nat prefix-name HES-MDF
+
+set security address-book global address IES-IDF-A 172.17.112.4/32
+set security address-book global address-set MONITORED-ELEMENTS address IES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule IES-IDF-A match destination-address 10.100.101.124/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule IES-IDF-A then static-nat prefix-name IES-IDF-A
+
+set security address-book global address IES-IDF-B 172.17.112.5/32
+set security address-book global address-set MONITORED-ELEMENTS address IES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule IES-IDF-B match destination-address 10.100.101.125/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule IES-IDF-B then static-nat prefix-name IES-IDF-B
+
+set security address-book global address IES-MDF 172.17.112.3/32
+set security address-book global address-set MONITORED-ELEMENTS address IES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule IES-MDF match destination-address 10.100.101.123/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule IES-MDF then static-nat prefix-name IES-MDF
+
+set security address-book global address JCBMS-IDF-A 172.17.208.4/32
+set security address-book global address-set MONITORED-ELEMENTS address JCBMS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-IDF-A match destination-address 10.100.101.170/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-IDF-A then static-nat prefix-name JCBMS-IDF-A
+
+set security address-book global address JCBMS-IDF-B 172.17.208.5/32
+set security address-book global address-set MONITORED-ELEMENTS address JCBMS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-IDF-B match destination-address 10.100.101.47/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-IDF-B then static-nat prefix-name JCBMS-IDF-B
+
+set security address-book global address JCBMS-IDF-C 172.17.208.6/32
+set security address-book global address-set MONITORED-ELEMENTS address JCBMS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-IDF-C match destination-address 10.100.101.48/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-IDF-C then static-nat prefix-name JCBMS-IDF-C
+
+set security address-book global address JCBMS-IDF-D 172.17.208.7/32
+set security address-book global address-set MONITORED-ELEMENTS address JCBMS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-IDF-D match destination-address 10.100.101.49/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-IDF-D then static-nat prefix-name JCBMS-IDF-D
+
+set security address-book global address JCBMS-MDF 172.17.208.3/32
+set security address-book global address-set MONITORED-ELEMENTS address JCBMS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-MDF match destination-address 10.100.101.45/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-MDF then static-nat prefix-name JCBMS-MDF
+
+set security address-book global address JCBMS-MDF-Intercom 172.17.208.8/32
+set security address-book global address-set MONITORED-ELEMENTS address JCBMS-MDF-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-MDF-Intercom match destination-address 10.100.101.169/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule JCBMS-MDF-Intercom then static-nat prefix-name JCBMS-MDF-Intercom
+
+set security address-book global address KES-IDF-A 172.16.12.4/32
+set security address-book global address-set MONITORED-ELEMENTS address KES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-IDF-A match destination-address 10.100.101.41/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-IDF-A then static-nat prefix-name KES-IDF-A
+
+set security address-book global address KES-IDF-A-Intercom 172.16.12.7/32
+set security address-book global address-set MONITORED-ELEMENTS address KES-IDF-A-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-IDF-A-Intercom match destination-address 10.100.101.165/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-IDF-A-Intercom then static-nat prefix-name KES-IDF-A-Intercom
+
+set security address-book global address KES-IDF-B 172.16.12.5/32
+set security address-book global address-set MONITORED-ELEMENTS address KES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-IDF-B match destination-address 10.100.101.42/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-IDF-B then static-nat prefix-name KES-IDF-B
+
+set security address-book global address KES-IDF-B-Intercom 172.16.12.8/32
+set security address-book global address-set MONITORED-ELEMENTS address KES-IDF-B-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-IDF-B-Intercom match destination-address 10.100.101.166/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-IDF-B-Intercom then static-nat prefix-name KES-IDF-B-Intercom
+
+set security address-book global address KES-MDF 172.16.12.3/32
+set security address-book global address-set MONITORED-ELEMENTS address KES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-MDF match destination-address 10.100.101.40/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-MDF then static-nat prefix-name KES-MDF
+
+set security address-book global address KES-MDF-Intercom 172.16.12.6/32
+set security address-book global address-set MONITORED-ELEMENTS address KES-MDF-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-MDF-Intercom match destination-address 10.100.101.146/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule KES-MDF-Intercom then static-nat prefix-name KES-MDF-Intercom
+
+set security address-book global address L3-MON-SRX 192.168.20.200/32
+set security address-book global address-set MONITORED-ELEMENTS address L3-MON-SRX
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule L3-MON-SRX match destination-address 207.191.188.94/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule L3-MON-SRX then static-nat prefix-name L3-MON-SRX
+
+set security address-book global address L3-TUNNEL-GA 10.250.101.2/32
+set security address-book global address-set MONITORED-ELEMENTS address L3-TUNNEL-GA
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule L3-TUNNEL-GA match destination-address 10.250.101.2/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule L3-TUNNEL-GA then static-nat prefix-name L3-TUNNEL-GA
+
+set security address-book global address L3-TUNNEL-TX 10.250.101.2/32
+set security address-book global address-set MONITORED-ELEMENTS address L3-TUNNEL-TX
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule L3-TUNNEL-TX match destination-address 10.251.101.2/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule L3-TUNNEL-TX then static-nat prefix-name L3-TUNNEL-TX
+
+set security address-book global address LEC-A-IDF-A 172.16.240.3/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-A-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-A-IDF-A match destination-address 10.100.101.1/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-A-IDF-A then static-nat prefix-name LEC-A-IDF-A
+
+set security address-book global address LEC-B-IDF-A 172.16.242.3/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-B-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-B-IDF-A match destination-address 10.100.101.3/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-B-IDF-A then static-nat prefix-name LEC-B-IDF-A
+
+set security address-book global address LEC-D-IDF-A 172.16.244.3/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-D-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-D-IDF-A match destination-address 10.100.101.16/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-D-IDF-A then static-nat prefix-name LEC-D-IDF-A
+
+set security address-book global address LEC-D-IDF-B 172.16.244.4/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-D-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-D-IDF-B match destination-address 10.100.101.17/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-D-IDF-B then static-nat prefix-name LEC-D-IDF-B
+
+set security address-book global address LEC-D-IDF-C 172.16.244.5/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-D-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-D-IDF-C match destination-address 10.100.101.18/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-D-IDF-C then static-nat prefix-name LEC-D-IDF-C
+
+set security address-book global address LEC-DC-AIRWAVE 172.16.30.25/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-AIRWAVE
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-AIRWAVE match destination-address 10.100.101.27/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-AIRWAVE then static-nat prefix-name LEC-DC-AIRWAVE
+
+set security address-book global address LEC-DC-ARUBA1 10.10.1.210/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-ARUBA1
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA1 match destination-address 10.100.101.19/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA1 then static-nat prefix-name LEC-DC-ARUBA1
+
+set security address-book global address LEC-DC-ARUBA2 10.10.1.220/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-ARUBA2
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA2 match destination-address 10.100.101.20/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA2 then static-nat prefix-name LEC-DC-ARUBA2
+
+set security address-book global address LEC-DC-ARUBA3 10.10.1.131/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-ARUBA3
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA3 match destination-address 10.100.101.21/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA3 then static-nat prefix-name LEC-DC-ARUBA3
+
+set security address-book global address LEC-DC-ARUBA4 10.10.1.141/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-ARUBA4
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA4 match destination-address 10.100.101.22/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA4 then static-nat prefix-name LEC-DC-ARUBA4
+
+set security address-book global address LEC-DC-ARUBA5 10.10.1.151/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-ARUBA5
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA5 match destination-address 10.100.101.23/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-ARUBA5 then static-nat prefix-name LEC-DC-ARUBA5
+
+set security address-book global address LEC-DC-CLEARPASS1 172.16.30.70/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-CLEARPASS1
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-CLEARPASS1 match destination-address 10.100.101.24/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-CLEARPASS1 then static-nat prefix-name LEC-DC-CLEARPASS1
+
+set security address-book global address LEC-DC-CLEARPASS2 172.16.30.71/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-CLEARPASS2
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-CLEARPASS2 match destination-address 10.100.101.25/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-CLEARPASS2 then static-nat prefix-name LEC-DC-CLEARPASS2
+
+set security address-book global address LEC-DC-CORE 192.168.20.20/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-CORE
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-CORE match destination-address 10.100.101.12/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-CORE then static-nat prefix-name LEC-DC-CORE
+
+set security address-book global address LEC-DC-DMZ 192.168.20.240/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-DMZ
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-DMZ match destination-address 10.100.101.13/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-DMZ then static-nat prefix-name LEC-DC-DMZ
+
+set security address-book global address LEC-DC-Infoblox-1 192.168.20.76/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-Infoblox-1
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-Infoblox-1 match destination-address 10.100.101.154/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-Infoblox-1 then static-nat prefix-name LEC-DC-Infoblox-1
+
+set security address-book global address LEC-DC-Infoblox-2 192.168.20.77/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-Infoblox-2
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-Infoblox-2 match destination-address 10.100.101.155/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-Infoblox-2 then static-nat prefix-name LEC-DC-Infoblox-2
+
+set security address-book global address LEC-DC-JUNIPER-SA 172.16.30.28/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-JUNIPER-SA
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-JUNIPER-SA match destination-address 10.100.101.26/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-JUNIPER-SA then static-nat prefix-name LEC-DC-JUNIPER-SA
+
+set security address-book global address LEC-DC-Misc 192.168.20.22/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-Misc
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-Misc match destination-address 10.100.101.143/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-Misc then static-nat prefix-name LEC-DC-Misc
+
+set security address-book global address LEC-DC-PA-5060-1 192.168.20.100/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-PA-5060-1
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-PA-5060-1 match destination-address 10.100.101.5/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-PA-5060-1 then static-nat prefix-name LEC-DC-PA-5060-1
+
+set security address-book global address LEC-DC-PA-5060-2 192.168.20.101/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-PA-5060-2
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-PA-5060-2 match destination-address 10.100.101.6/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-PA-5060-2 then static-nat prefix-name LEC-DC-PA-5060-2
+
+set security address-book global address LEC-DC-PANORAMA 172.16.30.41/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-PANORAMA
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-PANORAMA match destination-address 10.100.101.15/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-PANORAMA then static-nat prefix-name LEC-DC-PANORAMA
+
+set security address-book global address LEC-DC-PUBLIC 192.168.20.250/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-PUBLIC
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-PUBLIC match destination-address 10.100.101.10/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-PUBLIC then static-nat prefix-name LEC-DC-PUBLIC
+
+set security address-book global address LEC-DC-SSL-VPN 172.16.30.6/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-SSL-VPN
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-SSL-VPN match destination-address 10.100.101.159/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-SSL-VPN then static-nat prefix-name LEC-DC-SSL-VPN
+
+set security address-book global address LEC-DC-User 192.168.20.1/32
+set security address-book global address-set MONITORED-ELEMENTS address LEC-DC-User
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-User match destination-address 10.100.101.144/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule LEC-DC-User then static-nat prefix-name LEC-DC-User
+
+set security address-book global address MES-IDF-A 172.17.16.4/32
+set security address-book global address-set MONITORED-ELEMENTS address MES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-IDF-A match destination-address 10.100.101.89/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-IDF-A then static-nat prefix-name MES-IDF-A
+
+set security address-book global address MES-IDF-B 172.17.16.5/32
+set security address-book global address-set MONITORED-ELEMENTS address MES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-IDF-B match destination-address 10.100.101.90/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-IDF-B then static-nat prefix-name MES-IDF-B
+
+set security address-book global address MES-IDF-C 172.17.16.6/32
+set security address-book global address-set MONITORED-ELEMENTS address MES-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-IDF-C match destination-address 10.100.101.91/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-IDF-C then static-nat prefix-name MES-IDF-C
+
+set security address-book global address MES-IDF-D 172.17.16.7/32
+set security address-book global address-set MONITORED-ELEMENTS address MES-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-IDF-D match destination-address 10.100.101.92/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-IDF-D then static-nat prefix-name MES-IDF-D
+
+set security address-book global address MES-MDF 172.17.16.3/32
+set security address-book global address-set MONITORED-ELEMENTS address MES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-MDF match destination-address 10.100.101.88/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MES-MDF then static-nat prefix-name MES-MDF
+
+set security address-book global address MHS-IDF-A 172.17.96.4/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-A match destination-address 10.100.101.113/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-A then static-nat prefix-name MHS-IDF-A
+
+set security address-book global address MHS-IDF-B 172.17.96.5/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-B match destination-address 10.100.101.114/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-B then static-nat prefix-name MHS-IDF-B
+
+set security address-book global address MHS-IDF-C 172.17.96.6/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-C match destination-address 10.100.101.115/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-C then static-nat prefix-name MHS-IDF-C
+
+set security address-book global address MHS-IDF-D 172.17.96.7/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-D match destination-address 10.100.101.116/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-D then static-nat prefix-name MHS-IDF-D
+
+set security address-book global address MHS-IDF-E 172.17.96.8/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-E
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-E match destination-address 10.100.101.117/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-E then static-nat prefix-name MHS-IDF-E
+
+set security address-book global address MHS-IDF-F 172.17.96.9/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-F
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-F match destination-address 10.100.101.118/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-F then static-nat prefix-name MHS-IDF-F
+
+set security address-book global address MHS-IDF-G 172.17.96.18/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-G
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-G match destination-address 10.100.101.119/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-G then static-nat prefix-name MHS-IDF-G
+
+set security address-book global address MHS-IDF-H 172.17.96.19/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-H
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-H match destination-address 10.100.101.120/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-H then static-nat prefix-name MHS-IDF-H
+
+set security address-book global address MHS-IDF-I 172.17.96.20/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-I
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-I match destination-address 10.100.101.121/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-I then static-nat prefix-name MHS-IDF-I
+
+set security address-book global address MHS-IDF-J 172.17.96.21/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-J
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-J match destination-address 10.100.101.122/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-J then static-nat prefix-name MHS-IDF-J
+
+set security address-book global address MHS-IDF-K 172.17.96.22/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-K
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-K match destination-address 10.100.101.172/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-K then static-nat prefix-name MHS-IDF-K
+
+set security address-book global address MHS-IDF-Press 172.17.96.23/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-IDF-Press
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-Press match destination-address 10.100.101.173/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-IDF-Press then static-nat prefix-name MHS-IDF-Press
+
+set security address-book global address MHS-MDF 172.17.96.3/32
+set security address-book global address-set MONITORED-ELEMENTS address MHS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-MDF match destination-address 10.100.101.8/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule MHS-MDF then static-nat prefix-name MHS-MDF
+
+set security address-book global address NFES-IDF-A 172.16.4.4/32
+set security address-book global address-set MONITORED-ELEMENTS address NFES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule NFES-IDF-A match destination-address 10.100.101.30/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule NFES-IDF-A then static-nat prefix-name NFES-IDF-A
+
+set security address-book global address NFES-IDF-B 172.16.4.5/32
+set security address-book global address-set MONITORED-ELEMENTS address NFES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule NFES-IDF-B match destination-address 10.100.101.31/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule NFES-IDF-B then static-nat prefix-name NFES-IDF-B
+
+set security address-book global address NFES-MDF 172.16.4.3/32
+set security address-book global address-set MONITORED-ELEMENTS address NFES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule NFES-MDF match destination-address 10.100.101.29/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule NFES-MDF then static-nat prefix-name NFES-MDF
+
+set security address-book global address OGES-IDF-A 172.16.38.4/32
+set security address-book global address-set MONITORED-ELEMENTS address OGES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-IDF-A match destination-address 10.100.101.69/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-IDF-A then static-nat prefix-name OGES-IDF-A
+
+set security address-book global address OGES-IDF-B 172.16.38.5/32
+set security address-book global address-set MONITORED-ELEMENTS address OGES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-IDF-B match destination-address 10.100.101.70/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-IDF-B then static-nat prefix-name OGES-IDF-B
+
+set security address-book global address OGES-IDF-C 172.16.38.6/32
+set security address-book global address-set MONITORED-ELEMENTS address OGES-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-IDF-C match destination-address 10.100.101.71/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-IDF-C then static-nat prefix-name OGES-IDF-C
+
+set security address-book global address OGES-MDF 172.16.38.3/32
+set security address-book global address-set MONITORED-ELEMENTS address OGES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-MDF match destination-address 10.100.101.68/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-MDF then static-nat prefix-name OGES-MDF
+
+set security address-book global address OGES-MDF-Intercom 172.16.38.7/32
+set security address-book global address-set MONITORED-ELEMENTS address OGES-MDF-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-MDF-Intercom match destination-address 10.100.101.167/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule OGES-MDF-Intercom then static-nat prefix-name OGES-MDF-Intercom
+
+set security address-book global address PES-IDF-A 172.16.48.4/32
+set security address-book global address-set MONITORED-ELEMENTS address PES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PES-IDF-A match destination-address 10.100.101.78/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PES-IDF-A then static-nat prefix-name PES-IDF-A
+
+set security address-book global address PES-IDF-B 172.16.48.5/32
+set security address-book global address-set MONITORED-ELEMENTS address PES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PES-IDF-B match destination-address 10.100.101.79/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PES-IDF-B then static-nat prefix-name PES-IDF-B
+
+set security address-book global address PES-MDF 172.16.48.3/32
+set security address-book global address-set MONITORED-ELEMENTS address PES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PES-MDF match destination-address 10.100.101.77/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PES-MDF then static-nat prefix-name PES-MDF
+
+set security address-book global address PES-MDF-Intercom 172.16.48.6/32
+set security address-book global address-set MONITORED-ELEMENTS address PES-MDF-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PES-MDF-Intercom match destination-address 10.100.101.150/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PES-MDF-Intercom then static-nat prefix-name PES-MDF-Intercom
+
+set security address-book global address PTCE-IDF-A 172.16.14.4/32
+set security address-book global address-set MONITORED-ELEMENTS address PTCE-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PTCE-IDF-A match destination-address 10.100.101.44/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PTCE-IDF-A then static-nat prefix-name PTCE-IDF-A
+
+set security address-book global address PTCE-IDF-B 172.16.14.5/32
+set security address-book global address-set MONITORED-ELEMENTS address PTCE-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PTCE-IDF-B match destination-address 10.100.101.168/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PTCE-IDF-B then static-nat prefix-name PTCE-IDF-B
+
+set security address-book global address PTCE-MDF 172.16.14.3/32
+set security address-book global address-set MONITORED-ELEMENTS address PTCE-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PTCE-MDF match destination-address 10.100.101.43/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule PTCE-MDF then static-nat prefix-name PTCE-MDF
+
+set security address-book global address Peach-WAN-Router 168.8.0.102/32
+set security address-book global address-set MONITORED-ELEMENTS address Peach-WAN-Router
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule Peach-WAN-Router match destination-address 168.8.0.102/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule Peach-WAN-Router then static-nat prefix-name Peach-WAN-Router
+
+set security address-book global address RSMS-IDF-A 172.17.176.4/32
+set security address-book global address-set MONITORED-ELEMENTS address RSMS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-IDF-A match destination-address 10.100.101.73/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-IDF-A then static-nat prefix-name RSMS-IDF-A
+
+set security address-book global address RSMS-IDF-ADMIN 172.17.176.7/32
+set security address-book global address-set MONITORED-ELEMENTS address RSMS-IDF-ADMIN
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-IDF-ADMIN match destination-address 10.100.101.76/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-IDF-ADMIN then static-nat prefix-name RSMS-IDF-ADMIN
+
+set security address-book global address RSMS-IDF-B 172.17.176.5/32
+set security address-book global address-set MONITORED-ELEMENTS address RSMS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-IDF-B match destination-address 10.100.101.74/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-IDF-B then static-nat prefix-name RSMS-IDF-B
+
+set security address-book global address RSMS-IDF-C 172.17.176.6/32
+set security address-book global address-set MONITORED-ELEMENTS address RSMS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-IDF-C match destination-address 10.100.101.75/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-IDF-C then static-nat prefix-name RSMS-IDF-C
+
+set security address-book global address RSMS-MDF 172.17.176.3/32
+set security address-book global address-set MONITORED-ELEMENTS address RSMS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-MDF match destination-address 10.100.101.72/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-MDF then static-nat prefix-name RSMS-MDF
+
+set security address-book global address RSMS-MDF-Intercom 172.17.176.8/32
+set security address-book global address-set MONITORED-ELEMENTS address RSMS-MDF-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-MDF-Intercom match destination-address 10.100.101.148/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule RSMS-MDF-Intercom then static-nat prefix-name RSMS-MDF-Intercom
+
+set security address-book global address SCHS-IDF-A 172.17.128.3/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-A match destination-address 10.100.101.127/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-A then static-nat prefix-name SCHS-IDF-A
+
+set security address-book global address SCHS-IDF-A-Intercom 172.17.128.14/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-A-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-A-Intercom match destination-address 10.100.101.174/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-A-Intercom then static-nat prefix-name SCHS-IDF-A-Intercom
+
+set security address-book global address SCHS-IDF-B 172.17.128.4/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-B match destination-address 10.100.101.128/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-B then static-nat prefix-name SCHS-IDF-B
+
+set security address-book global address SCHS-IDF-B-Intercom 172.17.128.15/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-B-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-B-Intercom match destination-address 10.100.101.175/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-B-Intercom then static-nat prefix-name SCHS-IDF-B-Intercom
+
+set security address-book global address SCHS-IDF-C 172.17.128.5/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-C match destination-address 10.100.101.129/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-C then static-nat prefix-name SCHS-IDF-C
+
+set security address-book global address SCHS-IDF-C-Intercom 172.17.128.16/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-C-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-C-Intercom match destination-address 10.100.101.176/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-C-Intercom then static-nat prefix-name SCHS-IDF-C-Intercom
+
+set security address-book global address SCHS-IDF-D 172.17.128.6/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-D match destination-address 10.100.101.130/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-D then static-nat prefix-name SCHS-IDF-D
+
+set security address-book global address SCHS-IDF-D-Intercom 172.17.128.17/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-D-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-D-Intercom match destination-address 10.100.101.177/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-D-Intercom then static-nat prefix-name SCHS-IDF-D-Intercom
+
+set security address-book global address SCHS-IDF-E 172.17.128.7/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-E
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-E match destination-address 10.100.101.131/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-E then static-nat prefix-name SCHS-IDF-E
+
+set security address-book global address SCHS-IDF-E-Intercom 172.17.128.18/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-E-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-E-Intercom match destination-address 10.100.101.178/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-E-Intercom then static-nat prefix-name SCHS-IDF-E-Intercom
+
+set security address-book global address SCHS-IDF-F 172.17.128.8/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-F
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-F match destination-address 10.100.101.132/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-F then static-nat prefix-name SCHS-IDF-F
+
+set security address-book global address SCHS-IDF-F-Intercom 172.17.128.19/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-F-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-F-Intercom match destination-address 10.100.101.179/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-F-Intercom then static-nat prefix-name SCHS-IDF-F-Intercom
+
+set security address-book global address SCHS-IDF-G 172.17.128.9/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-G
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-G match destination-address 10.100.101.133/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-G then static-nat prefix-name SCHS-IDF-G
+
+set security address-book global address SCHS-IDF-G-Intercom 172.17.128.20/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-G-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-G-Intercom match destination-address 10.100.101.180/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-G-Intercom then static-nat prefix-name SCHS-IDF-G-Intercom
+
+set security address-book global address SCHS-IDF-H 172.17.128.10/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-H
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-H match destination-address 10.100.101.134/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-H then static-nat prefix-name SCHS-IDF-H
+
+set security address-book global address SCHS-IDF-H-Intercom 172.17.128.21/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-H-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-H-Intercom match destination-address 10.100.101.181/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-H-Intercom then static-nat prefix-name SCHS-IDF-H-Intercom
+
+set security address-book global address SCHS-IDF-I 172.17.128.11/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-I
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-I match destination-address 10.100.101.135/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-I then static-nat prefix-name SCHS-IDF-I
+
+set security address-book global address SCHS-IDF-I-Intercom 172.17.128.22/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-I-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-I-Intercom match destination-address 10.100.101.182/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-I-Intercom then static-nat prefix-name SCHS-IDF-I-Intercom
+
+set security address-book global address SCHS-IDF-J 172.17.128.12/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-J
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-J match destination-address 10.100.101.183/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-J then static-nat prefix-name SCHS-IDF-J
+
+set security address-book global address SCHS-IDF-J-Intercom 172.17.128.23/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-J-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-J-Intercom match destination-address 10.100.101.184/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-J-Intercom then static-nat prefix-name SCHS-IDF-J-Intercom
+
+set security address-book global address SCHS-IDF-Press 172.17.128.24/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-IDF-Press
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-Press match destination-address 10.100.101.185/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-IDF-Press then static-nat prefix-name SCHS-IDF-Press
+
+set security address-book global address SCHS-MDF 172.17.128.2/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-MDF match destination-address 10.100.101.126/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-MDF then static-nat prefix-name SCHS-MDF
+
+set security address-book global address SCHS-MDF-Intercom 172.17.128.13/32
+set security address-book global address-set MONITORED-ELEMENTS address SCHS-MDF-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-MDF-Intercom match destination-address 10.100.101.149/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SCHS-MDF-Intercom then static-nat prefix-name SCHS-MDF-Intercom
+
+set security address-book global address SHES-IDF-A 172.16.26.4/32
+set security address-book global address-set MONITORED-ELEMENTS address SHES-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SHES-IDF-A match destination-address 10.100.101.62/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SHES-IDF-A then static-nat prefix-name SHES-IDF-A
+
+set security address-book global address SHES-IDF-B 172.16.26.5/32
+set security address-book global address-set MONITORED-ELEMENTS address SHES-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SHES-IDF-B match destination-address 10.100.101.63/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SHES-IDF-B then static-nat prefix-name SHES-IDF-B
+
+set security address-book global address SHES-MDF 172.16.26.3/32
+set security address-book global address-set MONITORED-ELEMENTS address SHES-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SHES-MDF match destination-address 10.100.101.61/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SHES-MDF then static-nat prefix-name SHES-MDF
+
+set security address-book global address SHES-MDF-Intercom 172.16.26.6/32
+set security address-book global address-set MONITORED-ELEMENTS address SHES-MDF-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SHES-MDF-Intercom match destination-address 10.100.101.147/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SHES-MDF-Intercom then static-nat prefix-name SHES-MDF-Intercom
+
+set security address-book global address SMHS-IDF-A 172.17.32.4/32
+set security address-book global address-set MONITORED-ELEMENTS address SMHS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-A match destination-address 10.100.101.93/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-A then static-nat prefix-name SMHS-IDF-A
+
+set security address-book global address SMHS-IDF-ADMIN 172.17.32.8/32
+set security address-book global address-set MONITORED-ELEMENTS address SMHS-IDF-ADMIN
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-ADMIN match destination-address 10.100.101.96/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-ADMIN then static-nat prefix-name SMHS-IDF-ADMIN
+
+set security address-book global address SMHS-IDF-B 172.17.32.5/32
+set security address-book global address-set MONITORED-ELEMENTS address SMHS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-B match destination-address 10.100.101.94/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-B then static-nat prefix-name SMHS-IDF-B
+
+set security address-book global address SMHS-IDF-C 172.17.32.6/32
+set security address-book global address-set MONITORED-ELEMENTS address SMHS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-C match destination-address 10.100.101.95/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-C then static-nat prefix-name SMHS-IDF-C
+
+set security address-book global address SMHS-IDF-D 172.17.32.7/32
+set security address-book global address-set MONITORED-ELEMENTS address SMHS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-D match destination-address 10.100.101.153/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-D then static-nat prefix-name SMHS-IDF-D
+
+set security address-book global address SMHS-IDF-Press 172.17.32.10/32
+set security address-book global address-set MONITORED-ELEMENTS address SMHS-IDF-Press
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-Press match destination-address 10.100.101.186/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-IDF-Press then static-nat prefix-name SMHS-IDF-Press
+
+set security address-book global address SMHS-Intercom 172.17.32.9/32
+set security address-book global address-set MONITORED-ELEMENTS address SMHS-Intercom
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-Intercom match destination-address 10.100.101.152/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-Intercom then static-nat prefix-name SMHS-Intercom
+
+set security address-book global address SMHS-MDF 172.17.32.3/32
+set security address-book global address-set MONITORED-ELEMENTS address SMHS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-MDF match destination-address 10.100.101.9/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule SMHS-MDF then static-nat prefix-name SMHS-MDF
+
+set security address-book global address TRANS-IDF-WHSE 172.18.208.4/32
+set security address-book global address-set MONITORED-ELEMENTS address TRANS-IDF-WHSE
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule TRANS-IDF-WHSE match destination-address 10.100.101.164/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule TRANS-IDF-WHSE then static-nat prefix-name TRANS-IDF-WHSE
+
+set security address-book global address TRANS-MDF 172.18.208.3/32
+set security address-book global address-set MONITORED-ELEMENTS address TRANS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule TRANS-MDF match destination-address 10.100.101.163/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule TRANS-MDF then static-nat prefix-name TRANS-MDF
+
+set security address-book global address WHS-IDF-A 172.17.64.4/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-A match destination-address 10.100.101.100/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-A then static-nat prefix-name WHS-IDF-A
+
+set security address-book global address WHS-IDF-B 172.17.64.5/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-B match destination-address 10.100.101.101/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-B then static-nat prefix-name WHS-IDF-B
+
+set security address-book global address WHS-IDF-C 172.17.64.6/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-C match destination-address 10.100.101.102/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-C then static-nat prefix-name WHS-IDF-C
+
+set security address-book global address WHS-IDF-D 172.17.64.7/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-D match destination-address 10.100.101.103/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-D then static-nat prefix-name WHS-IDF-D
+
+set security address-book global address WHS-IDF-E 172.17.64.8/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-E
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-E match destination-address 10.100.101.104/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-E then static-nat prefix-name WHS-IDF-E
+
+set security address-book global address WHS-IDF-F 172.17.64.9/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-F
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-F match destination-address 10.100.101.105/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-F then static-nat prefix-name WHS-IDF-F
+
+set security address-book global address WHS-IDF-G 172.17.64.10/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-G
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-G match destination-address 10.100.101.106/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-G then static-nat prefix-name WHS-IDF-G
+
+set security address-book global address WHS-IDF-H 172.17.64.11/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-H
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-H match destination-address 10.100.101.107/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-H then static-nat prefix-name WHS-IDF-H
+
+set security address-book global address WHS-IDF-I 172.17.64.12/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-I
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-I match destination-address 10.100.101.108/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-I then static-nat prefix-name WHS-IDF-I
+
+set security address-book global address WHS-IDF-Press 172.17.64.13/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-IDF-Press
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-Press match destination-address 10.100.101.187/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-IDF-Press then static-nat prefix-name WHS-IDF-Press
+
+set security address-book global address WHS-MDF 172.17.64.3/32
+set security address-book global address-set MONITORED-ELEMENTS address WHS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-MDF match destination-address 10.100.101.11/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WHS-MDF then static-nat prefix-name WHS-MDF
+
+set security address-book global address WMS-IDF-A 172.17.160.4/32
+set security address-book global address-set MONITORED-ELEMENTS address WMS-IDF-A
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-IDF-A match destination-address 10.100.101.57/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-IDF-A then static-nat prefix-name WMS-IDF-A
+
+set security address-book global address WMS-IDF-B 172.17.160.5/32
+set security address-book global address-set MONITORED-ELEMENTS address WMS-IDF-B
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-IDF-B match destination-address 10.100.101.58/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-IDF-B then static-nat prefix-name WMS-IDF-B
+
+set security address-book global address WMS-IDF-C 172.17.160.6/32
+set security address-book global address-set MONITORED-ELEMENTS address WMS-IDF-C
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-IDF-C match destination-address 10.100.101.59/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-IDF-C then static-nat prefix-name WMS-IDF-C
+
+set security address-book global address WMS-IDF-D 172.17.160.7/32
+set security address-book global address-set MONITORED-ELEMENTS address WMS-IDF-D
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-IDF-D match destination-address 10.100.101.60/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-IDF-D then static-nat prefix-name WMS-IDF-D
+
+set security address-book global address WMS-MDF 172.17.160.3/32
+set security address-book global address-set MONITORED-ELEMENTS address WMS-MDF
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-MDF match destination-address 10.100.101.56/32
+set security nat static rule-set MONITORED-ELEMENTS-STATIC-NATS rule WMS-MDF then static-nat prefix-name WMS-MDF
+
