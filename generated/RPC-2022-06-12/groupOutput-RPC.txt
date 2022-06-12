@@ -1,0 +1,12 @@
+define hostgroup {
+	hostgroup_name		RPC
+	alias			Ring Power
+	notes			\nContact List (In order)\n--------------------------------------------------------------------\n\n--------------------------------------------------------------------\n
+	notes_url		https,//ssl.layer3com.com
+}
+define servicegroup {
+	servicegroup_name	RPC
+	alias			Ring Power
+	notes			\nContact List (In order)\n--------------------------------------------------------------------\n\n--------------------------------------------------------------------\n
+	notes_url		https,//ssl.layer3com.com
+}
